@@ -14,6 +14,9 @@ import type {
   FilterApi,
   FunctionReference,
 } from "convex/server";
+import type * as generatePlaylist from "../generatePlaylist";
+import type * as getAccessToken from "../getAccessToken";
+import type * as playNext from "../playNext";
 
 /**
  * A utility for referencing Convex functions in your app's API.
@@ -23,7 +26,11 @@ import type {
  * const myFunctionReference = api.myModule.myFunction;
  * ```
  */
-declare const fullApi: ApiFromModules<{}>;
+declare const fullApi: ApiFromModules<{
+  generatePlaylist: typeof generatePlaylist;
+  getAccessToken: typeof getAccessToken;
+  playNext: typeof playNext;
+}>;
 export declare const api: FilterApi<
   typeof fullApi,
   FunctionReference<any, "public">
