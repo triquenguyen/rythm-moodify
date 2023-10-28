@@ -1,17 +1,18 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import LoginButton from './login'
+import LoginBtn from './components/LoginBtn'
+
+import { Authenticated, Unauthenticated, AuthLoading } from "convex/react";
+import Navbar from './components/Navbar';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <LoginButton />
-    </>
-  )
-}
+    <div className="bg-[#022A3B] w-[100vw] h-[100vh]">
+      <Navbar />
 
+      
+    </div>
+  );
+}
 export default App
+
