@@ -92,7 +92,7 @@
 
 
 // export const fetchRecordPredictions = action({
-//   args: { fileName: v.object() },
+//   args: { fileName: v.optional() },
 //   handler: (ctx, args) => {
 //     const data = processRawText(args.fileName, language, languageModelConfig)
 

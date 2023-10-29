@@ -5,6 +5,7 @@ import LoginBtn from './components/LoginBtn'
 import { Authenticated, Unauthenticated, AuthLoading } from "convex/react";
 import Navbar from './components/Navbar';
 import Transcript from './components/Transcript';
+import RecordPredictions from './components/RecordPredictions';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Navbar />
 
       <Transcript />
+
+      <RecordPredictions />
     </div>
   );
 }

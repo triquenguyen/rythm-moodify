@@ -13,7 +13,7 @@ async function processRawText(
   language,
   languageModelConfig
 ) {
-  const MAX_RETRIES = 5; // adjust the number of retries here
+  const MAX_RETRIES = 10; // adjust the number of retries here
   const INITIAL_DELAY_MS = 1000; // starting with 1 second delay
 
   let delay = INITIAL_DELAY_MS;
@@ -89,7 +89,6 @@ function buildHumeRequestOptions(method) {
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
-
 
 export const fetchPredictions = action({
   args: { transcript: v.string() },
