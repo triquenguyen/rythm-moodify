@@ -16,7 +16,8 @@ import type {
 } from "convex/server";
 import type * as generatePlaylist from "../generatePlaylist";
 import type * as getAccessToken from "../getAccessToken";
-import type * as playNext from "../playNext";
+import type * as getCurrent from "../getCurrent";
+import type * as getNext from "../getNext";
 
 /**
  * A utility for referencing Convex functions in your app's API.
@@ -29,7 +30,8 @@ import type * as playNext from "../playNext";
 declare const fullApi: ApiFromModules<{
   generatePlaylist: typeof generatePlaylist;
   getAccessToken: typeof getAccessToken;
-  playNext: typeof playNext;
+  getCurrent: typeof getCurrent;
+  getNext: typeof getNext;
 }>;
 export declare const api: FilterApi<
   typeof fullApi,
