@@ -7,8 +7,6 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 const Navbar = () => {
   const { user } = useAuth0(); 
-  console.log(user);
-
   return (
     <nav className="flex py-2 px-12 justify-center items-center shadow-md">
       <div className="mr-auto">

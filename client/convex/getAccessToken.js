@@ -1,7 +1,7 @@
 "use node"
 import { action } from "./_generated/server";
 
-export const getToken = action({
+export const getClientToken = action({
   handler: async () => {
     const spotify_id = process.env.CLIENT_ID;
     const spotify_secret = process.env.CLIENT_SECRET;

@@ -14,10 +14,10 @@ import type {
   FilterApi,
   FunctionReference,
 } from "convex/server";
-import type * as generatePlaylist from "../generatePlaylist";
 import type * as getAccessToken from "../getAccessToken";
 import type * as getCurrent from "../getCurrent";
 import type * as getNext from "../getNext";
+import type * as getSongRec from "../getSongRec";
 
 /**
  * A utility for referencing Convex functions in your app's API.
@@ -28,10 +28,10 @@ import type * as getNext from "../getNext";
  * ```
  */
 declare const fullApi: ApiFromModules<{
-  generatePlaylist: typeof generatePlaylist;
   getAccessToken: typeof getAccessToken;
   getCurrent: typeof getCurrent;
   getNext: typeof getNext;
+  getSongRec: typeof getSongRec;
 }>;
 export declare const api: FilterApi<
   typeof fullApi,
